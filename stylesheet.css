@@ -1,0 +1,856 @@
+@import url("https://fonts.googleapis.com/css2?family=Special-Elite:wght@400;500&display=swap");
+
+
+
+body {
+  background-color: black;
+   
+}
+
+
+
+header h1{
+
+  margin: 0;
+  
+}
+
+
+header{
+  
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  
+}
+
+#loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: opacity 15s ease-in-out;
+  opacity: 1;
+}
+
+.loader-wrapper.loaded {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
+
+
+body.loaded {
+  opacity: 1;
+}
+
+#loader-wrapper.loaded {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2.5s ease-in-out;
+  z-index: -1;
+}
+
+
+
+header h1 img{
+  max-height: 25px;
+}
+nav {
+  height: 40px;
+  text-align: center;
+}
+
+ .nav3 ul li a{
+  padding: 20px;
+    color: #f70612;
+  font-size: 18px;
+  font-family: 'Special Elite', sans-serif;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+
+.nav3 ul a{
+text-decoration: none;
+}
+
+
+
+.nav3 ul{
+  list-style: none;
+  margin:0px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav3 ul li {
+  display:inline;
+  text-decoration:none;
+  text-align: center;
+
+}
+
+
+div.venue-card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-family: 'Special Elite', sans-serif;
+  background-color: transparent;
+}
+
+.text-container {
+  padding-left: 20px;
+    color: #f70612;
+
+}
+
+.text-container .no-indent {
+  list-style-type:none;
+  padding-left: 0;
+}
+
+div.venue-image {
+  background: url("img/venerate.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 180px;
+  min-width: 580px;
+ 
+}
+
+@media screen and (min-width: 768px) {
+  div.venue-card {
+    flex-direction: row;
+    width: 60%;
+    background-color:#f70612;
+;
+  }
+   div.imag {
+    min-height: 240px;
+    min-width: 200px;
+  } */
+  div.text-container {
+    margin: 0 30px;
+    max-width: 660px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.venue-card {
+    margin-left: 100px;
+    margin-right: 300px;
+        background-color: transparent;
+  min-width: 100px;
+    min-width: 200px;
+    padding-top: 20px;
+
+  }
+
+
+}
+
+
+.icono {
+    padding-left: 15px;
+}
+
+@keyframes infinite-spinning {
+  0%{
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.image-to-spin {
+  animation: infinite-spinning 1s infinite;
+  width: 120px;
+  height: 120px;
+  margin-top: 50px;
+}
+
+@keyframes spinning {
+  0%{
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animacion-principal {
+  animation: infinite-spinning 1s infinite;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+button {
+    width: 190px;
+    height: 44px;
+   
+    background-color: transparent;
+    color: #f70612;
+    border: thin;
+    border-style: solid;
+    font-family: 'Special Elite', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+     box-shadow: #f70612, 0px 0px 7px 0px;
+   margin-bottom: 20px;
+   margin-top: 15px;
+}
+
+
+button:hover {
+    background-color: #f70612;
+    color: black;
+    border-style: solid;
+    border: thin;
+    border-color: black;
+    box-shadow: black 1px 0px 5px 0px;
+      box-shadow: darkred 0.1px 0.1px 8px 0.2px;
+
+
+}
+
+.upcoming {
+    color: #f70612;
+    font-family: 'Special Elite', sans-serif;
+
+}
+
+.icono {
+    color: transparent;
+    border: thin;
+    border-style: solid;
+    border-color: #f70612;
+    border-radius: 150px;
+    padding-left: 2px;
+    margin-left: 10px;
+         box-shadow: #f70612 0px 0px 4px 1px;
+         margin-bottom: 10px;
+         margin-top: 4px;
+
+}
+
+.icono:hover {
+    background-color: #910;
+    opacity: 0.9;
+}
+
+
+.blackicon:hover {
+    color: black;
+}
+
+.release-date {
+ letter-spacing: 2px;
+ font-size: 22px;
+ margin-top: 0;
+ padding-bottom: 20px;
+}
+
+.songs {
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: #f70612;
+
+    line-height: 1.5;
+    
+}
+
+
+.bottom-icon {
+    margin-left: 10px;
+}
+
+
+.gun {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.venerate {
+    padding-bottom: 10px;
+}
+
+.down-icon {
+  color: #f70612;
+
+  border-radius: 100px;
+  width: 40px;
+  height: 30px;
+  padding-top: 7px;
+}
+
+.down-icon:hover {
+  color: #7c070d;
+  border-radius: 100px;
+  width: 40px;
+  height: 30px;
+  padding-top: 7px;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 1024px) {
+ 
+
+.venerate {
+  width: 280px;
+  padding: 0;
+  padding-top: 20px;
+  margin-right:  25px;
+}
+
+nav {
+  height: 30px;
+  text-align: center;
+}
+
+ .nav3 ul li a{
+  padding-left: 2px;
+    color: #f70612;
+  font-size: 15px;
+  font-family: 'Special Elite', sans-serif;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+
+.nav3 ul a{
+text-decoration: none;
+}
+
+
+
+.nav3 ul{
+  list-style: none;
+  margin:0px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav3 ul li {
+  display:inline;
+  text-decoration:none;
+  text-align: center;
+
+}
+
+
+
+div.venue-card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-family: 'Special Elite', sans-serif;
+  background-color: transparent;
+}
+
+.text-container {
+  padding-left: 20px;
+    color: #f70612;
+
+}
+
+.text-container .no-indent {
+  list-style-type:none;
+  padding-left: 0;
+}
+
+div.venue-image {
+  background: url("img/venerate.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  min-width: 10px;
+  margin-top: 40px;
+
+}
+
+
+
+
+.image-to-spin {
+  animation: infinite-spinning 1s infinite;
+  width: 120px;
+  height: 120px;
+  margin-top: 50px;
+}
+
+
+button {
+    width: 190px;
+    height: 44px;
+   
+    background-color: transparent;
+    color: #f70612;
+    border: thin;
+    border-style: solid;
+    font-family: 'Special Elite', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+     box-shadow: #f70612, 0px 0px 7px 0px;
+   margin-bottom: 20px;
+   margin-top: 15px;
+}
+
+
+button:hover {
+    background-color: #f70612;
+    color: black;
+    border-style: solid;
+    border: thin;
+    border-color: black;
+    box-shadow: black 1px 0px 5px 0px;
+      box-shadow: darkred 0.1px 0.1px 8px 0.2px;
+
+
+}
+
+.upcoming {
+    color: #f70612;
+    font-family: 'Special Elite', sans-serif;
+
+}
+
+.icono {
+    color: transparent;
+    border: thin;
+    border-style: solid;
+    border-color: #f70612;
+    border-radius: 150px;
+    padding-left: 2px;
+    margin-left: 10px;
+         box-shadow: #f70612 0px 0px 4px 1px;
+         margin-bottom: 10px;
+         margin-top: 4px;
+
+
+}
+
+.icono:hover {
+    background-color: #910;
+    opacity: 0.9;
+}
+
+
+.blackicon:hover {
+    color: black;
+
+
+}
+
+.release-date {
+ letter-spacing: 2px;
+ font-size: 20px;
+ text-align: center;
+ padding-top: 10;
+ padding-bottom: 20px;
+     padding-right: 15px;
+     overflow: hidden;
+     overflow: hidden;
+     white-space: nowrap;
+
+}
+
+#release-date {
+  font-family: 'Special Elite', sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.songs {
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: #f70612;
+
+    line-height: 2;
+    text-align: center;
+    padding-right: 15px;
+
+    
+}
+
+
+.info {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.bottom-icon {
+    margin-left: 10px;
+}
+
+
+
+
+.gun {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.down-icon {
+  color: #f70612;
+  border: solid;
+  border-style: solid;
+
+  border-radius: 100px;
+  width: 40px;
+  height: 30px;
+  padding-top: 7px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.down-icon:hover {
+  color: #f70612;
+  border: solid;
+  border-radius: 100px;
+  width: 40px;
+  height: 30px;
+  padding-top: 7px;
+
+  box-shadow: darkred 0.1px 0.1px 8px 0.2px;
+  background-color: #100;
+}
+
+
+.icono {
+  margin-left: 2px;
+}
+
+
+.centrar {
+  margin-right: 18px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+}
+
+
+
+
+}
+
+
+
+}
+
+
+
+.container {
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+}
+.cards {
+  display: inline-block;
+  padding: 0rem;
+  padding-top: 40px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+@media (min-width: 40rem) {
+  .cards {
+    width: 50%;
+  }
+  #wrapper {
+    display: flex;
+    justify-content: center;
+    padding-left:10em;
+  }
+}
+@media (min-width: 56rem) {
+  .cards {
+    width: 33.3%;
+
+  }
+}
+.cards .card-item {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.1s;
+
+
+}
+.cards .card-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+    background-color: black;
+
+  -webkit-transform: scale(1.1);
+}
+.cards .card-item:hover .card-image {
+  opacity: 1;
+}
+.cards .card-info {
+  display: flex;
+
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding-top: 1rem;
+  line-height: 1.5em;
+  color: #f70612;
+  font-family: 'Special Elite', sans-serif;
+  font-size: 1em;
+  background-color: black;
+}
+.cards .card-title {
+  font-size: 25px;
+
+  font-family: 'Special Elite', sans-serif;
+  line-height: 1.1em;
+  margin-bottom: 0.2em;
+
+}
+.cards .card-image {
+  height: 300px;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+
+
+ .card-image1 {
+  height: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ background-image: url(img/altarofmammon.jpg);
+
+
+}
+
+ .card-image2 {
+  height: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ background-image: url(img/venerate.jpg);
+
+
+}
+
+ .card-image3 {
+  height: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ background-image: url(img/studio.png);
+
+
+}
+
+ .card-image4 {
+  height: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ background-image: url(img/sigilo.png);
+
+
+}
+
+
+
+.active {
+  color: darkred;
+}zqax>                                                                                                                                                                                                          
+
+.date {
+  color: #f70612;
+  font-size: 15px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family: 'Special Elite', sans-serif;
+
+}
+
+
+a {
+  text-decoration: none;
+  color:#f70612
+}
+
+a:hover {
+  color: darkred;
+}
+
+
+
+a:hover {
+  color: darkred !important;
+}
+
+.contenedor{
+    border: 10px solid black;
+    width: 400px;
+    margin: auto;
+
+}
+.imgen{
+    width: 351px;
+    height: 25em;
+}
+.album-name{
+    margin: 15px;
+    color: #f70612;
+    line-height: 25px;
+    font-size: 25px;
+    font-family: 'Special Elite', sans-serif;
+    letter-spacing: 4px;
+}
+
+
+.tracklist{
+    color: #f70612;
+    line-height: 38px;
+    font-size: 16px;
+    font-family: 'Special Elite', sans-serif;
+
+}
+
+.date{
+    color: darkred;
+    font-family: 'Special Elite', sans-serif;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+
+}
+
+.datedesc {
+    color: #f70612;
+    line-height: 28px;
+    font-size: 16px;
+    font-family: 'Special Elite', sans-serif;
+    padding-left: 1em;
+
+}
+
+.btn{
+    margin: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: black;
+    font-family: 'Special Elite', sans-serif;
+    cursor: pointer;
+}
+
+
+.botonstream{
+   margin: 1px;
+    padding: 1px;
+    padding-left: ;
+    padding-right: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 2.5em;
+    border-radius: 100px;
+
+
+}
+
+
+.mention {
+  color: darkred;
+  line-height: 22px;
+}
+
+.mention:hover {
+  color: red;
+}
+
+
+
+.image-dwell {
+  width: 22em;
+  height: 22em;
+}
+
+
+.botonabajo {
+  color: #f70612;
+}
+
+.botonstream:hover {
+  background-color: black;
+}
+
+
+
+
+@media (max-width:368px)  { 
+
+.image-dwell {
+  width: 90%;
+  height: 19em;
+}
+
+
+}
+
+
+#content {
+  opacity: 1;
+  transition: opacity 5s ease-in-out;
+}
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+
+
